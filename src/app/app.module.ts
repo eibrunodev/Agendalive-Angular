@@ -9,6 +9,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSelectModule} from '@angular/material/select';
 import {MatButtonModule} from '@angular/material/button';
+import { LiveListComponent } from './views/home/live-list/live-list.component';
+import {MatTabsModule} from '@angular/material/tabs';
+
 
 
 
@@ -17,7 +20,8 @@ import {MatButtonModule} from '@angular/material/button';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    LiveListComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +30,8 @@ import {MatButtonModule} from '@angular/material/button';
     MatToolbarModule,
     MatIconModule,
     MatSelectModule,
-    MatButtonModule
+    MatButtonModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
